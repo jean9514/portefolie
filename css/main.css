@@ -1,0 +1,145 @@
+/* Basis styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: Avenir Next, sans-serif;
+
+}
+
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #D78B84;
+    color: darkgray;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../Pics/IMG_3329.JPG');
+
+}
+
+h1 {
+    margin-top: 2.5em;
+    text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+p {
+    margin-top: 2.5em;
+    margin-left: 3.66em;
+    margin-right: 2.5em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    margin-top: 2em;
+
+}
+
+ul {
+    background-color: #D78B84;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+nav ul li {
+    position: relative;
+    padding-right: 2em;
+}
+
+.dropdown > ul {
+    display: none;
+    position: absolute;
+    background-color: #D78B84;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    padding: 1em;
+
+}
+
+.dropdown > ul li {
+    white-space: nowrap;
+    padding: 0 2em;
+}
+
+.dropdown:hover > ul {
+    display: block;
+}
+
+/*navigation slut*/
+
+.storyboard {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 50vw;
+}
+
+.experiencemap {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 50vw;
+}
+
+.bmc {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 50vw;
+}
+
+
+.personas {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 50vw;
+}
+
+
+.styletile {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 50vw;
+}
+
+#images {
+    text-align: center;
+}
