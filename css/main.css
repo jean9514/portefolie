@@ -18,31 +18,9 @@ body {
     max-width: 100%;
     margin: 0 auto;
     background-color: #D78B84;
-    /*    color: darkgray;*/
     background-size: cover;
     background-position: center;
 
-}
-
-h1 {
-    margin-top: 2.5em;
-    text-align: center;
-
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
-    margin-top: 2.5em;
-    text-align: center;
-}
-
-p {
-    margin-top: 2.5em;
-    margin-left: 3.66em;
-    margin-right: 2.5em;
 }
 
 a {
@@ -63,13 +41,11 @@ nav ul {
     padding-top: 20px;
     padding-bottom: 20px;
 
-
 }
-
 
 nav ul li {
     position: relative;
-    padding-right: 2em;
+    padding-right: 30px;
 
 }
 
@@ -80,7 +56,7 @@ nav ul li {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
-    padding: 1em;
+
 
 }
 
@@ -88,6 +64,7 @@ nav ul li {
     white-space: nowrap;
     padding: 0 2em;
 }
+
 
 .dropdown:hover > ul {
     display: block;
