@@ -1,4 +1,4 @@
-/* Basis styles */
+/* generalt */
 
 * {
     margin: 0;
@@ -18,10 +18,9 @@ body {
     max-width: 100%;
     margin: 0 auto;
     background-color: #D78B84;
-    color: darkgray;
+    /*    color: darkgray;*/
     background-size: cover;
     background-position: center;
-/*    background-image: url('../Pics/IMG_3329.JPG');*/
 
 }
 
@@ -51,29 +50,27 @@ a {
     color: white;
 }
 
-nav {
-    margin-top: 2em;
-
-}
-
-ul {
-    background-color: #D78B84;
-}
-
-/* Navigation */
+/* Navigationsbaren */
 
 nav ul {
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    justify-content: center;
+    background-color: #D78B84;
     list-style: none;
-    padding-left: 0;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
 }
 
 
 nav ul li {
     position: relative;
     padding-right: 2em;
+
 }
 
 .dropdown > ul {
@@ -98,48 +95,6 @@ nav ul li {
 
 /*navigation slut*/
 
-.storyboard {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    height: 50vw;
-}
-
-.experiencemap {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    height: 50vw;
-}
-
-.bmc {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    height: 50vw;
-}
-
-
-.personas {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    height: 50vw;
-}
-
-
-.styletile {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    height: 50vw;
-}
-
-#images {
-    text-align: center;
+#splash img {
+    width: 100%;
 }
