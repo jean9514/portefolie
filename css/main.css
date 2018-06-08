@@ -1,4 +1,4 @@
-/* generalt */
+/* general settings */
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 html {
     font-size: 1em;
     line-height: 1.4;
-    font-family: Avenir Next, sans-serif;
+    font-family: cuprum, sans-serif;
 
 }
 
@@ -17,19 +17,26 @@ html {
 body {
     max-width: 100%;
     margin: 0 auto;
-    background-color: #D78B84;
+    background-color: #F0EAEE;
     background-size: cover;
     background-position: center;
 
 }
 
-header{
-     position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    background-color: #D78B84;
+header {
 
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 20vh;
+    /*  vh er view hight og det er %-vis hvor mange % af skærm display det optager, uanset device. meget smart ;)  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../Pics/baggrund.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -37,7 +44,32 @@ a {
     color: white;
 }
 
+p {
+    color: gray;
+}
+
+h1 {
+    color: gray;
+    text-align: center;
+}
+
+
+img {
+    width: 100%;
+
+}
+
 /*navigation*/
+
+.menu {
+
+
+    background-color: #D78B84;
+    z-index: 5;
+    padding: 5px;
+    z-index: 10;
+
+}
 
 .menubutton {
     width: 2em;
@@ -52,18 +84,16 @@ a {
 
 }
 
+/*selve burger menuen, de 3 streger. hight er sat til px da det giver et pænere visuelt udtryk end ved brug af em*/
+
 .bar {
     width: 1.8em;
-    /*   hight er sat til px da det giver et pænere visuelt udtryk end ved brug af em*/
     height: 1px;
     background-color: white;
     transition: transform .5s;
-
-
-
 }
 
-/*her lavets burgermuen om til et kryds, samt links"bar" dropper ned*/
+/*her lavets burgermuen om til et kryds*/
 
 .kryds .bar1 {
     transform: rotate(45deg) translate(8px, 7px);
@@ -79,6 +109,7 @@ a {
 }
 
 
+/*selve nav baren*/
 
 nav {
     position: absolute;
@@ -87,71 +118,134 @@ nav {
     transform: translate(0);
     transform-origin: top;
     transition: transform 5s;
+    right: 0;
+
 }
+
+/*skjuler burgermenuen så man ser X*/
 
 .hidden {
     display: none;
     transform: translate();
+}
+
+/* navigation slut*/
+
+.intro_tekst {
+    margin-top: 250px;
+
 
 }
 
-/*slut*/
+.tekst_content {
+    text-align: justify;
+    margin-left: 107px;
+    margin-right: 107px;
 
-/*
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #D78B84;
-    list-style: none;
+}
+
+.tekst_content p {
+    margin-top: 20px;
+}
+
+.text p {
+    color: black;
+
+
+}
+
+.border_pic {
+    width: 100%;
     position: fixed;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    top: 0;
+    z-index: 2;
+}
+
+/* intro images med overlay på start siden*/
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
-nav ul li {
+.bottom {
+    display: flex;
+    flex-wrap: wrap
+}
 
+.tema_1_img {
+    flex-basis: 150px;
+    flex-grow: 3;
+    margin-top: 25px;
+    margin-left: 100px;
+    padding: 5px;
+
+
+}
+
+.tema_2_img {
+    flex-basis: 150px;
+    flex-grow: 3;
+    margin-top: 25px;
+    margin-right: 100px;
+    padding: 5px;
+}
+
+.tema_3_img {
+    flex-basis: 150px;
+    flex-grow: 3;
+    margin-left: 100px;
+    padding: 5px;
+}
+
+.tema_4_img {
+    flex-basis: 150px;
+    flex-grow: 3;
+    margin-right: 100px;
+    padding: 5px;
+}
+
+.content {
     position: relative;
-    padding-right: 30px;
 
 }
 
-.dropdown > ul {
-
-    display: none;
-    position: absolute;
-    background-color: #D78B84;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-
-
-}
-
-.dropdown-content {
-
-    padding-left: 12px;
-    padding-top: 12px;
-    padding-right: 120px;
-    padding-bottom: 12px;
-
-}
-
-.dropdown > ul li {
-    white-space: nowrap;
-        padding: 0 2em;
-}
-
-
-
-.dropdown:hover > ul {
+.image {
     display: block;
-}
-*/
-
-/*navigation slut*/
-
-#splash img {
     width: 100%;
+    height: auto;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #D78B84;
+}
+
+/* betyder; at hvert gang jeg hover over content, skal den vise/ bruge overlay*/
+
+.content:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*        hvorfor hedder den her -ms- transform og ikke kun transform?*/
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* overlay slut*/
