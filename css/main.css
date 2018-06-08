@@ -131,6 +131,8 @@ nav {
 
 /* navigation slut*/
 
+/* Introduktions side*/
+
 .intro_tekst {
     margin-top: 250px;
 
@@ -148,6 +150,11 @@ nav {
     margin-top: 20px;
 }
 
+.tekst_content h2 {
+    text-align: center;
+    color: gray;
+}
+
 .text p {
     color: black;
 
@@ -161,7 +168,7 @@ nav {
     z-index: 2;
 }
 
-/* intro images med overlay på start siden*/
+/*images med overlay*/
 
 .top {
     display: flex;
@@ -174,13 +181,13 @@ nav {
     flex-wrap: wrap
 }
 
+
 .tema_1_img {
     flex-basis: 150px;
     flex-grow: 3;
     margin-top: 25px;
     margin-left: 100px;
     padding: 5px;
-
 
 }
 
@@ -190,6 +197,8 @@ nav {
     margin-top: 25px;
     margin-right: 100px;
     padding: 5px;
+
+
 }
 
 .tema_3_img {
@@ -228,6 +237,7 @@ nav {
     opacity: 0;
     transition: .5s ease;
     background-color: #D78B84;
+
 }
 
 /* betyder; at hvert gang jeg hover over content, skal den vise/ bruge overlay*/
@@ -243,9 +253,33 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*        hvorfor hedder den her -ms- transform og ikke kun transform?*/
+    /* hvorfor hedder den her -ms- transform og ikke kun transform?*/
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
 
-/* overlay slut*/
+/*profil side*/
+
+.profile_image_container {}
+
+.profil_image {
+    max-width: 50vw;
+    margin: 150px auto -80px;
+    /*   da den ingen margin her men automatisk arver instillingerne, blir billedt positioneret med lige meget margin på begge sidder og sidder der for i center */
+}
+
+/*parent*/
+
+.profil_tekst {
+    margin-top: 50px;
+}
+
+/*child*/
+
+.profil_content {
+    text-align: center;
+}
+
+.profil_content p {
+    margin-top: 20px;
+}
