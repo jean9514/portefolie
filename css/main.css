@@ -197,6 +197,10 @@ nav {
     text-align: justify;
 }
 
+.profil_content_top p a {
+    color: #D78B84;
+}
+
 .profil_content_top h5 {
     margin-top: 30px;
 }
