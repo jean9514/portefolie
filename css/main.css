@@ -17,7 +17,8 @@ html {
 body {
     max-width: 100%;
     margin: 0 auto;
-    background-color: #F0EAEE;
+    /*    background-color: #F0EAEE;*/
+    background-color: E3E3E4;
     background-size: cover;
     background-position: center;
 
@@ -46,9 +47,30 @@ a {
 
 p {
     color: gray;
+
 }
 
 h1 {
+    color: gray;
+    text-align: center;
+}
+
+h2 {
+    color: gray;
+    text-align: center;
+}
+
+h3 {
+    color: gray;
+    text-align: center;
+}
+
+h4 {
+    color: gray;
+    text-align: center;
+}
+
+h5 {
     color: gray;
     text-align: center;
 }
@@ -187,8 +209,9 @@ nav {
     flex-grow: 3;
     margin-top: 25px;
     margin-left: 100px;
-    padding: 5px;
-
+    /*    padding: 5px;*/
+    border: solid;
+    border-color: #D78B84;
 }
 
 .tema_2_img {
@@ -196,23 +219,30 @@ nav {
     flex-grow: 3;
     margin-top: 25px;
     margin-right: 100px;
-    padding: 5px;
-
-
+    /*    padding: 5px;*/
+    border-top: solid;
+    border-right: solid;
+    border-color: #D78B84;
 }
 
 .tema_3_img {
     flex-basis: 150px;
     flex-grow: 3;
     margin-left: 100px;
-    padding: 5px;
+    /*    padding: 5px;*/
+    border-left: solid;
+    border-bottom: solid;
+
+    border-color: #D78B84;
 }
 
 .tema_4_img {
     flex-basis: 150px;
     flex-grow: 3;
     margin-right: 100px;
-    padding: 5px;
+    /*    padding: 5px;*/
+    border: solid;
+    border-color: #D78B84;
 }
 
 .content {
@@ -258,9 +288,11 @@ nav {
     text-align: center;
 }
 
-/*profil side*/
+.overlay .text h2 {
+    color: black;
+}
 
-.profile_image_container {}
+/*profil side*/
 
 .profil_image {
     max-width: 50vw;
@@ -271,15 +303,52 @@ nav {
 /*parent*/
 
 .profil_tekst {
-    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*child*/
 
-.profil_content {
+.profil_content_top {
+
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin-top: 10px;
+}
+
+.profil_content_top h4 {
+    margin-top: 20px;
     text-align: center;
 }
 
-.profil_content p {
-    margin-top: 20px;
+.profil_content_top p {
+
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+}
+
+.profil_content_top h5 {
+    margin-top: 50px;
+}
+
+
+
+/*footer med link til mail*/
+
+footer {
+    text-align: center;
+    color: gray;
+    margin-top: 200px;
+
+}
+
+address a {
+    font-family: 'cuprum';
+    color: #D78B84;
+    text-decoration: none;
+
+
 }
