@@ -17,7 +17,6 @@ html {
 body {
     max-width: 100%;
     margin: 0 auto;
-    /*    background-color: #F0EAEE;*/
     background-color: E3E3E4;
     background-size: cover;
     background-position: center;
@@ -151,12 +150,61 @@ nav {
     transform: translate();
 }
 
-/* navigation slut*/
 
-/* Introduktions side*/
+/*profil*/
+
+.introducton {
+    margin-bottom: -50px;
+}
+
+.profil_image {
+    max-width: 50vw;
+    margin: 150px auto -80px;
+    /*   da den ingen margin her men automatisk arver instillingerne, blir billedt positioneret med lige meget margin på begge sidder og sidder der for i center */
+}
+
+/*parent*/
+
+.profil_tekst {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*child*/
+
+.profil {
+    margin-top: -30px;
+}
+
+.profil_content_top {
+
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin-top: 10px;
+}
+
+.profil_content_top h4 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profil_content_top p {
+
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+}
+
+.profil_content_top h5 {
+    margin-top: 30px;
+}
+
+/* Introduktion/ overlay */
 
 .intro_tekst {
-    margin-top: 250px;
+    margin-top: 100px;
 
 
 }
@@ -192,9 +240,15 @@ nav {
 
 /*images med overlay*/
 
+.overlay_temaer {
+    transform: scale(0.5);
+    /*    margin-top: -150px;*/
+}
+
 .top {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -180px;
 
 }
 
@@ -292,56 +346,13 @@ nav {
     color: black;
 }
 
-/*profil side*/
-
-.profil_image {
-    max-width: 50vw;
-    margin: 150px auto -80px;
-    /*   da den ingen margin her men automatisk arver instillingerne, blir billedt positioneret med lige meget margin på begge sidder og sidder der for i center */
-}
-
-/*parent*/
-
-.profil_tekst {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/*child*/
-
-.profil_content_top {
-
-    flex-basis: 300px;
-    flex-grow: 3;
-    margin-top: 10px;
-}
-
-.profil_content_top h4 {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.profil_content_top p {
-
-    margin-top: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
-    letter-spacing: 0.2px;
-    text-align: justify;
-}
-
-.profil_content_top h5 {
-    margin-top: 50px;
-}
-
-
 
 /*footer med link til mail*/
 
 footer {
     text-align: center;
     color: gray;
-    margin-top: 200px;
+    margin-top: px;
 
 }
 
