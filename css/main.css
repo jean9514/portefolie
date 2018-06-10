@@ -422,18 +422,110 @@ nav {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-
-
 }
 
-.animation_billede_1 {}
+/*TEMA 3 Basic content*/
+
+.basic_content_tekst {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bc_content {
+
+    flex-basis: 300px;
+    flex-grow: 2;
+    margin-top: 200px;
+}
+
+.bc_content_top {
+    max-width: 600px;
+    margin: auto;
+}
+
+.bc_content p a {
+    color: #D78B84;
+}
+
+.bc_content_bottom {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+
+.bc_content_bottom p a {
+    color: #D78B84;
+}
+
+.bc_content img {
+    border: solid;
+    border-color: #D78B84;
+    /* dette centrere alle billederne og laver dem til en blok, så de styres som en enhed frem for 3 seperate elemeneter.   */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+/*TEMA 4 grundlæggende UX*/
+
+.ux_tekst {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ux_content {
+
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin-top: 200px;
+}
+
+.ux_content_top {
+    max-width: 600px;
+    margin: auto;
+}
+
+.ux_content p a {
+    color: #D78B84;
+}
+
+.ux_content img {
+    border: solid;
+    border-color: #D78B84;
+    /* dette centrere alle billederne og laver dem til en blok, så de styres som en enhed frem for 3 seperate elemeneter.   */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 20%;
+    height: 60%;
+}
+
+.ux_content_bottom {
+    max-width: 600px;
+    margin: auto;
+}
+
+.ux_content_bottom p {
+    margin-top: 20px;
+}
+
+.ux_content_bottom p a {
+    color: #D78B84;
+}
+
+.ux_content_bottom_tekst {
+    margin-bottom: 80px;
+}
 
 /*footer med link til mail*/
 
 footer {
     text-align: center;
     color: gray;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 
