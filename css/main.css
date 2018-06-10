@@ -354,27 +354,79 @@ nav {
 .intro_tekst {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .tekst_content {
 
     flex-basis: 300px;
     flex-grow: 3;
-    margin-top: 85px;
+    margin-top: 200px;
 }
 
-.tekst_content p {
-    margin-left: 36px;
-    margin-right: 36px;
+.web_design_top {
+    max-width: 750px;
+    margin: auto;
+}
 
+.web_design_bottom {
+    max-width: 750px;
+    margin: auto;
 }
 
 .tekst_content img {
     border: solid;
     border-color: #D78B84;
-    transform: scale(0.9);
+    /* dette centrere alle billederne og laver dem til en blok, så de styres som en enhed frem for 3 seperate elemeneter.   */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 20px;
+
 }
 
+/*TEMA 2: grundlæggende animation*/
+
+.animation_tekst {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animation_content {
+
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin-top: 200px;
+}
+
+.animation_top {
+    max-width: 600px;
+    margin: auto;
+}
+
+.animation_bottom {
+    max-width: 600px;
+    margin: auto;
+}
+
+.animation_content p a {
+    color: #D78B84;
+}
+
+.animation_content img {
+    border: solid;
+    border-color: #D78B84;
+    /* dette centrere alle billederne og laver dem til en blok, så de styres som en enhed frem for 3 seperate elemeneter.   */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+
+}
+
+.animation_billede_1 {}
 
 /*footer med link til mail*/
 
@@ -390,5 +442,3 @@ address a {
     color: #D78B84;
     text-decoration: none;
 }
-
-/*TEMA 2: grundlæggende animation*/
