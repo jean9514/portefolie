@@ -163,17 +163,14 @@ nav {
     /*   da den ingen margin her men automatisk arver instillingerne, blir billedt positioneret med lige meget margin på begge sidder og sidder der for i center */
 }
 
-/*parent*/
+
+.profil {
+    margin-top: -30px;
+}
 
 .profil_tekst {
     display: flex;
     flex-wrap: wrap;
-}
-
-/*child*/
-
-.profil {
-    margin-top: -30px;
 }
 
 .profil_content_top {
@@ -205,6 +202,7 @@ nav {
     margin-top: 30px;
 }
 
+
 /* Introduktion/ overlay */
 
 .intro_tekst {
@@ -224,10 +222,13 @@ nav {
     margin-top: 20px;
 }
 
-.tekst_content h2 {
-    text-align: center;
-    color: gray;
+
+.tekst_content p a {
+    color: #D78B84;
+    margin-bottom: 20px;
 }
+
+/*images med overlay*/
 
 .text p {
     color: black;
@@ -241,8 +242,6 @@ nav {
     top: 0;
     z-index: 2;
 }
-
-/*images med overlay*/
 
 .overlay_temaer {
     transform: scale(0.5);
@@ -350,13 +349,39 @@ nav {
     color: black;
 }
 
+/*TEMA 1: grundlæggende html*/
+
+.intro_tekst {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tekst_content {
+
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin-top: 85px;
+}
+
+.tekst_content p {
+    margin-left: 36px;
+    margin-right: 36px;
+
+}
+
+.tekst_content img {
+    border: solid;
+    border-color: #D78B84;
+    transform: scale(0.9);
+}
+
 
 /*footer med link til mail*/
 
 footer {
     text-align: center;
     color: gray;
-    margin-top: px;
+    margin-top: 10px;
 
 }
 
@@ -364,6 +389,6 @@ address a {
     font-family: 'cuprum';
     color: #D78B84;
     text-decoration: none;
-
-
 }
+
+/*TEMA 2: grundlæggende animation*/
