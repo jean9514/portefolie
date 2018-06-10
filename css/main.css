@@ -212,9 +212,13 @@ nav {
 }
 
 .tekst_content {
+    /*
     text-align: justify;
     margin-left: 107px;
     margin-right: 107px;
+*/
+    max-width: 750px;
+    margin: auto;
 
 }
 
